@@ -5,8 +5,9 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/api', function (req, res, next) {
-    res.send('api');
+// 登录的API
+router.post('/user/login', function (req, res, next) {
+    console.log(req.body);
 });
 
 module.exports = router;

@@ -4,10 +4,13 @@
  */
 var express = require('express');
 var mongoose = require('mongoose'); // 加载数据库模块
+var bodyParser = require('body-parser'); // 加载body-parser中间件，获取post请求数据
 var app = express();
 
 // 静态文件托管
 app.use('/public', express.static(__dirname + '/public'));
+//使用和配置body-parser
+app.use(bodyParser.urlencoded({extended: true}));
 
 // 配置模板引擎
 app.set('views', './views');
@@ -19,7 +22,7 @@ app.use('/api', require('./routers/api')); // api
 app.use('/', require('./routers/main')); // 前台页面展示
 
 // 连接数据库
-mongoose.connect('mongodb://localhost:27019/blog', function (err) {
+mongoose.connect('mongodb://localhost:27017/blog', function (err) {
     if (err) {
         console.log('数据库连接失败');
     } else {

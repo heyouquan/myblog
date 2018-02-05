@@ -1,0 +1,47 @@
+/**
+主页的样式
+ */
+body{
+    height: 100%;
+    width: 100%;
+}
+.topImg{
+    width: 100%;
+    height: 264px;
+}
+img{
+    width: 100%;
+    height: 264px;
+}
+.nav_list{
+    font-size: 16px;
+}
+.nav_list ul li:first-child a{
+    border-bottom: 5px solid #FF8C00;
+}
+.nav-link{
+    color: #5D478B;
+}
+.nav-link:hover{
+    border-bottom: 5px solid #FF8C00;
+    color: #7A67EE;
+}
+.middle_left{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 10%;
+    display: inline-block;
+}
+.middle_right{
+    width: 20%;
+    position: absolute;
+    right: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    vertical-align: top;
+}
+.login{
+    background-color: #FF8C00;
+}
