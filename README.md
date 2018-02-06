@@ -22,13 +22,13 @@ npm run build  // 构建
 
 接口文档：
 （1）登录
-username---String/number
-password---String/number
+username---String
+password---String
 checkstatus---on/off
 （2）注册
-username---String/number
-password---String/number
-repassword---String/number
+username---String
+password---String
+repassword---String
 
 
 ...持续更新，敬请期待！
