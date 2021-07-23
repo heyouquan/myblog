@@ -31,4 +31,4 @@ password---String
 repassword---String
 
 
-...持续更新，敬请期待！
+.....持续更新，敬请期待！
